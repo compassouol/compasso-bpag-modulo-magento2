@@ -1,0 +1,44 @@
+#compasso_uol_pagamentos_credit_card + label {
+    background: url(../images/logo_compasso.gif) no-repeat left center;padding-left:90px;height:30px;display:inline-block;line-height:30px;background-size:auto 30px;
+}
+
+.display-none {
+    display:none;
+}
+
+span.card-brand {
+    float:right;
+    position:absolute;
+    display:inline-block;
+    margin-top:2px;
+    margin-left:-34px;
+    width:30px;
+    height:30px;
+    background:url(../images/cartoes-sprite.png) no-repeat 0 0;
+    z-index:999;
+}
+span.card-brand.card-default {
+    background-position: -245px 0;
+}
+span.card-brand.card-visa {
+    background-position: -63px 0;
+}
+span.card-brand.card-master {
+    background-position: -93px 0;
+}
+span.card-brand.card-diners {
+    background-position: -153px 0;
+}
+span.card-brand.card-amex {
+    background-position: 0 0;
+}
+span.card-brand.card-discover {
+    background-position: -33px 0;
+}
+span.card-brand.card-jcb {
+    background-position: -123px 0;
+}
+span.card-brand.card-visa_electron {
+    background-position: -183px 0;
+}
+

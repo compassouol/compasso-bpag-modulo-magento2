@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+    <group id="bpag" translate="label" type="text" sortOrder="10" showInDefault="1"
+        showInWebsite="1" showInStore="1">
+        <label>Configurações Gerais</label>
+        <field id="environment" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>AMBIENTE</label>
+            <tooltip>Define o ambiente de uso</tooltip>
+            <source_model>Compasso\Bpag\Model\System\Config\Environment</source_model>
+            <config_path>payment/bpag/environment</config_path>
+        </field>
+
+        <!--<field id="email" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">-->
+            <!--<label>E-MAIL</label>-->
+            <!--<comment>E-mail cadastrado na plataforma de pagamentos Compasso UOL</comment>-->
+            <!--<config_path>payment/bpag/email</config_path>-->
+            <!--<validate>required-entry validate-email</validate>-->
+        <!--</field>-->
+
+        <field id="secret_key" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>SECRET KEY</label>
+            <comment>Acesse sua conta na plataforma de pagamentos Compasso UOL para obter uma chave.</comment>
+            <config_path>payment/bpag/secret_key</config_path>
+            <validate>required-entry</validate>
+        </field>
+
+
+        <field id="access_id" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>ACCESS ID</label>
+            <comment>Acesse sua conta na plataforma de pagamentos Compasso UOL para obter o Account Name.</comment>
+            <config_path>payment/bpag/access_id</config_path>
+            <validate>required-entry</validate>
+        </field>
+
+        <field id="merchant" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>MERCHANT</label>
+            <comment>Acesse sua conta na plataforma de pagamentos Compasso UOL para obter o Merchant.</comment>
+            <config_path>payment/bpag/merchant</config_path>
+            <validate>required-entry</validate>
+        </field>
+
+        <field id="account" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>ACCOUNT</label>
+            <comment>Acesse sua conta na plataforma de pagamentos Compasso UOL para obter uma chave.</comment>
+            <config_path>payment/bpag/account</config_path>
+            <validate>required-entry</validate>
+        </field>
+
+        <field id="redirect" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>URL DE REDIRECIONAMENTO</label>
+            <comment>Ao final do fluxo de pagamento, seu cliente será redirecionado de volta para sua loja ou para a URL que você informar neste campo. Para utilizar essa funcionalidade você deve acessar a plataforma de pagamentos Compasso UOL e habilitar requisições de pagamentos gerados somente via API.</comment>
+            <config_path>payment/bpag/redirect</config_path>
+        </field>
+
+        <field id="notification" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>URL DE NOTIFICAÇÃO</label>
+            <comment>Sempre que uma transa&#231;&#227;o mudar de status, a plataforma de pagamentos envia uma notifica&#231;&#227;o para sua loja ou para a URL que voc&#234; informar neste campo.</comment>
+            <config_path>payment/bpag/notification</config_path>
+        </field>
+
+        <field id="charset" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>CHARSET</label>
+            <comment>Defina o charset de acordo com a codificação do seu sistema.</comment>
+            <source_model>Compasso\Bpag\Model\System\Config\Charset</source_model>
+            <config_path>payment/bpag/charset</config_path>
+        </field>
+
+        <!--<field id="log" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">-->
+            <!--<label>ATIVAR LOG</label>-->
+            <!--<source_model>Compasso\Bpag\Model\System\Config\Yesno</source_model>-->
+            <!--<config_path>payment/bpag/log</config_path>-->
+        <!--</field>-->
+
+        <!--<field id="log_file" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">-->
+            <!--<label>NOME DO ARQUIVO DE LOG</label>-->
+            <!--<depends>-->
+                <!--<field id="log">1</field>-->
+            <!--</depends>-->
+            <!--<comment>-->
+                <!--Nome do arquivo de log a ser utilizado, com caminho relativo ou absoluto, que tenha permissões de leitura e escrita (Ex.: var/log/compasso_pagamentos.log).-->
+            <!--</comment>-->
+            <!--<tooltip>-->
+                <!--Para que ocorra normalmente a geração de logs é estritamente necessário que o diretório e o arquivo de log configurados tenham permissões de leitura e escrita.-->
+            <!--</tooltip>-->
+            <!--<config_path>payment/bpag/log_file</config_path>-->
+        <!--</field>-->
+
+        <!--<field id="abandoned_active" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="0">-->
+            <!--<label>LISTAR TRANSAÇÕES ABANDONADAS?</label>-->
+            <!--<comment>Deseja habilitar o módulo?</comment>-->
+            <!--<source_model>Compasso\Bpag\Model\System\Config\Yesno</source_model>-->
+            <!--<config_path>payment/bpag/abandoned_active</config_path>-->
+        <!--</field>-->
+
+        <!--<field id="shopping_cart_recovery" translate="label" type="select" sortOrder="125" showInDefault="1" showInWebsite="1" showInStore="0">-->
+            <!--<label>HABILITAR RECUPERAÇÃO DE CARRINHO</label>-->
+            <!--<tooltip>Habilita/desabilita a recuperação de carrinho do PagSeguro.</tooltip>-->
+             <!--<comment>Para saber mais sobre a recuperação de carrinho do PagSeguro, clique &lt;a href=&quot;https://pagseguro.uol.com.br/para-seu-negocio/online/recuperacao-de-carrinho&quot; target=&quot;_blank&quot;&gt;aqui&lt;/a&gt;.</comment>-->
+            <!--<source_model>Compasso\Bpag\Model\System\Config\Yesno</source_model>-->
+            <!--<config_path>payment/bpag/shopping_cart_recovery</config_path>-->
+        <!--</field>-->
+
+        <field id="numero_parcelas" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>PARCELAS MÁXIMAS</label>
+            <comment>Número máximo de parcelas exibidas no checkout</comment>
+            <config_path>payment/bpag/numero_parcelas</config_path>
+        </field>
+        <field id="parcela_minima" translate="label" type="text" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>PARCELA VALOR MÍINIMA</label>
+            <comment>Valor mínimo da parcela</comment>
+            <config_path>payment/bpag/parcela_minima</config_path>
+        </field>
+
+    </group>
+</include>

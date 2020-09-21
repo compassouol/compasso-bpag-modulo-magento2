@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="payment">
+			<group id="compasso_uol_pagamentos_settings" translate="label" type="text" sortOrder="50" showInDefault="1"
+				   showInWebsite="1" showInStore="1">
+				<label>Compasso UOL Pagamentos</label>
+				<include path="Compasso_Bpag::system/general_configuration.xml"/>
+				<include path="Compasso_Bpag::system/payment_configuration.xml"/>
+			</group>
+		</section>
+	</system>
+</config>

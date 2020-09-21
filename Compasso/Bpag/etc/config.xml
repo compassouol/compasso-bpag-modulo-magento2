@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<compasso_uol_pagamentos_credit_card>
+				<title>Cartão de Crédito</title>
+				<active>0</active>
+				<model>Compasso\Bpag\Model\PaymentCreditCard</model>
+				<order_status>compasso_bpag_iniciado</order_status>
+				<group>compasso_uol_payments</group>
+			</compasso_uol_pagamentos_credit_card>
+		</payment>
+	</default>
+</config>

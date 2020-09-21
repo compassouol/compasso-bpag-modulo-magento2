@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * 2019-20 [Compasso UOL Tecnologia]
+ *
+ * NOTICE OF LICENSE
+ *
+ *Licensed under the Apache License, Version 2.0 (the "License");
+ *you may not use this file except in compliance with the License.
+ *You may obtain a copy of the License at
+ *
+ *http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *Unless required by applicable law or agreed to in writing, software
+ *distributed under the License is distributed on an "AS IS" BASIS,
+ *WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *See the License for the specific language governing permissions and
+ *limitations under the License.
+ *
+ *  @author    Compasso UOL Tecnologia
+ *  @copyright 2020 Compasso UOL Tecnologia
+ *  @license   http://www.apache.org/licenses/LICENSE-2.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Compasso_Bpag::CompassoPagamento" title="Compasso UOL Pagamentos" module="Compasso_Bpag" sortOrder="70" resource="Compasso_Bpag::Bpag" />
+        <add id="Compasso_Bpag::Config" title="Configurações" module="Compasso_Bpag" sortOrder="10" action="adminhtml/system_config/edit/section/payment/" resource="Compasso_Bpag::Config" parent="Compasso_Bpag::CompassoPagamento" />
+        <!--add id="Compasso_Bpag::Conciliation" title="Conciliação" module="Compasso_Bpag" sortOrder="10" action="bpag/conciliation/index" resource="Compasso_Bpag::Conciliation" parent="Compasso_Bpag::CompassoPagamento" />
+        <add id="Compasso_Bpag::Abandoned" title="Abandonadas" module="Compasso_Bpag" sortOrder="10" action="bpag/abandoned/index" resource="Compasso_Bpag::Abandoned" parent="Compasso_Bpag::CompassoPagamento" />
+        <add id="Compasso_Bpag::Cancellation" title="Cancelamento" module="Compasso_Bpag" sortOrder="10" action="bpag/cancellation/index" resource="Compasso_Bpag::Cancellation" parent="Compasso_Bpag::CompassoPagamento" />
+        <add id="Compasso_Bpag::Refund" title="Estorno" module="Compasso_Bpag" sortOrder="10" action="bpag/refund/index" resource="Compasso_Bpag::Refund" parent="Compasso_Bpag::CompassoPagamento" />
+        <add id="Compasso_Bpag::transactions" title="Listar transações" module="Compasso_Bpag" sortOrder="10" action="bpag/transactions/index" resource="Compasso_Bpag::Transactions" parent="Compasso_Bpag::CompassoPagamento" /-->
+    </menu>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>PagSeguro</title>
+        <meta name="viewport" content="width=1024, initial-scale=1"/>
+        <css src="Compasso_Bpag::css/dataTables.min.css"/>
+        <css src="Compasso_Bpag::css/styles.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="adminhtml.block.bpag.abandoned.error"
+                   template="Compasso_Bpag::abandoned/error/active.phtml" />
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="adminhtml.block.bpag.abandoned.header"
+                   template="Compasso_Bpag::abandoned/header.phtml"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="adminhtml.block.bpag.conciliation.buttons"
+                   template="Compasso_Bpag::abandoned/toolbar/buttons.phtml"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="adminhtml.block.bpag.abandoned.content"
+                   template="Compasso_Bpag::abandoned/content.phtml" />
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="adminhtml.block.bpag.abandoned.error.disable"
+                   template="Compasso_Bpag::abandoned/error/disable.phtml" />
+        </referenceContainer>
+    </body>
+</page>
